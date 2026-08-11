@@ -131,38 +131,79 @@ listed, read, updated or deleted through the public API.
 
 ## Deployment
 
-### Strapi backend
+Architecture: **Strapi on Render**, **Next.js on Vercel**.
 
-Strapi needs a persistent filesystem or object storage, so deploy it as a long-running
-service (Railway, Render, Fly.io, DigitalOcean App Platform or a VPS) — not to a
-serverless platform.
+> Strapi cannot run on Vercel. It needs a long-running process and a writable
+> filesystem, while Vercel functions are stateless and ephemeral. Its dependency tree
+> (~680 MB) also exceeds Vercel's 250 MB function limit. Deploy Strapi to a container
+> host instead.
 
-1. Provision a PostgreSQL database and set `DATABASE_CLIENT=postgres` plus the connection
-   variables. Enable `DATABASE_SSL=true` for managed providers.
-2. Set all Strapi secrets to fresh production values — never reuse development keys.
-3. Set `CORS_ORIGINS` to your production frontend origin(s).
-4. Build and start:
+Deploy Strapi **first** — the frontend reads content from it at build time, so building
+Vercel before the CMS exists produces a site with empty states.
+
+### 1. Push to GitHub
+
+Both platforms deploy from a Git remote:
+
+```bash
+git remote add origin https://github.com/<you>/tpi-homes.git
+git push -u origin main
+```
+
+### 2. Strapi → Render
+
+`render.yaml` at the repo root is a Blueprint that provisions the web service and a
+managed PostgreSQL instance together.
+
+1. Render dashboard → **New → Blueprint** → select the repository. Render reads
+   `render.yaml`, creates `tpi-homes-db` and `tpi-homes-cms`, wires `DATABASE_URL`
+   between them, and generates the Strapi secrets automatically.
+2. Fill in the variables marked `sync: false` under the service's **Environment** tab:
+
+   | Variable | Value |
+   | -------- | ----- |
+   | `CORS_ORIGINS` | Your Vercel domain, e.g. `https://tpi-homes.vercel.app` |
+   | `INQUIRY_NOTIFICATION_EMAIL` | Where inquiry alerts should go |
+   | `CLOUDINARY_NAME` / `CLOUDINARY_KEY` / `CLOUDINARY_SECRET` | From your Cloudinary dashboard |
+
+   Cloudinary is required, not optional. Render's filesystem is wiped on every deploy,
+   so without it all property images vanish. `config/plugins.js` switches to Cloudinary
+   automatically once `CLOUDINARY_NAME` is set.
+3. Once the service is live, open `https://<your-service>.onrender.com/admin` and create
+   the first admin user. Do this promptly — the registration screen is open to whoever
+   reaches it first.
+4. **Settings → Users & Permissions → Roles → Public**: enable `find` and `findOne` for
+   the content types, and `create` on Inquiry only.
+5. Seed the content from your machine, pointing at production:
    ```bash
-   npm ci && npm run build && npm run start
+   cd backend
+   DATABASE_CLIENT=postgres DATABASE_URL='<external-connection-string>' DATABASE_SSL=true \
+     npm run seed
    ```
-5. Configure media storage. The default local provider loses uploads on redeploy for
-   ephemeral filesystems, so install a provider such as
-   `@strapi/provider-upload-cloudinary` or `@strapi/provider-upload-aws-s3` and configure
-   it in `config/plugins.js`.
-6. Create the admin user on first boot, then set Public role permissions to `find` and
-   `findOne` for the content types plus `create` on Inquiry.
 
-### Next.js frontend
+   Note the free plan spins down after ~15 minutes idle, so the first request after a
+   quiet spell takes 30–60s. Frontend fetches fail gracefully into empty states, but
+   upgrade to a paid instance for production traffic.
 
-Deploy to Vercel, Netlify or any Node host.
+### 3. Next.js → Vercel
 
-1. Set the root directory to `frontend`
-2. Environment variables: `NEXT_PUBLIC_STRAPI_URL` (production Strapi URL),
-   `NEXT_PUBLIC_SITE_URL` (production domain), plus `STRAPI_API_TOKEN` and
-   `NEXT_PUBLIC_GA_ID` if used
-3. Build command `npm run build`, start command `npm run start`
-4. Add your Strapi/CDN hostname to `images.remotePatterns` in `next.config.ts` so
-   `next/image` will optimise CMS media
+The project root is a monorepo, so Vercel must target the `frontend` directory.
+
+```bash
+cd frontend
+vercel login
+vercel link
+vercel env add NEXT_PUBLIC_STRAPI_URL production   # https://<service>.onrender.com
+vercel env add NEXT_PUBLIC_SITE_URL production     # https://<your-domain>
+vercel --prod
+```
+
+Or through the dashboard: **Add New → Project**, set **Root Directory** to `frontend`,
+add the same two variables, and deploy. `frontend/vercel.json` supplies the framework
+preset, region and security headers.
+
+After the first deploy, set `CORS_ORIGINS` on Render to the real Vercel URL and redeploy
+the CMS so browser requests aren't blocked.
 
 ### Domain, SSL and DNS
 
