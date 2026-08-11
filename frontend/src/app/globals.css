@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+
+/**
+ * TPI Homes design tokens.
+ *
+ * Brand palette: deep navy for trust/authority, gold for the accent and CTAs —
+ * mirroring the logo and the reference site's visual language.
+ */
+@theme {
+  /* Navy — headers, footers, dark sections */
+  --color-brand-50: #f0f4f9;
+  --color-brand-100: #dae4f0;
+  --color-brand-200: #b8cbe3;
+  --color-brand-300: #8aa8cf;
+  --color-brand-400: #5b81b6;
+  --color-brand-500: #3d629d;
+  --color-brand-600: #2e4c7e;
+  --color-brand-700: #263d63;
+  --color-brand-800: #1c2f4d;
+  --color-brand-900: #12203a;
+  --color-brand-950: #0a1428;
+
+  /* Gold — accents, CTAs, highlights */
+  --color-accent-50: #fdf9ed;
+  --color-accent-100: #f9efcc;
+  --color-accent-200: #f3dc95;
+  --color-accent-300: #ecc45e;
+  --color-accent-400: #e6ad38;
+  --color-accent-500: #d99020;
+  --color-accent-600: #c0711a;
+  --color-accent-700: #9f5318;
+  --color-accent-800: #82421a;
+  --color-accent-900: #6c3719;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-plus-jakarta), var(--font-inter), ui-sans-serif, sans-serif;
+
+  --shadow-card: 0 1px 3px rgb(10 20 40 / 0.06), 0 8px 24px -8px rgb(10 20 40 / 0.12);
+  --shadow-card-hover: 0 4px 12px rgb(10 20 40 / 0.1), 0 16px 40px -12px rgb(10 20 40 / 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-brand-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-bold tracking-tight text-balance;
+  }
+
+  /* Keyboard focus ring, consistent across interactive elements. */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-500;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Long-form copy rendered from Strapi text fields. */
+  .prose-content {
+    @apply space-y-4 leading-relaxed text-brand-700;
+  }
+
+  .prose-content p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer utilities {
+  /* Cheap fade-in for content that enters on scroll or route change. */
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out both;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Clamp helpers for card titles and excerpts. */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

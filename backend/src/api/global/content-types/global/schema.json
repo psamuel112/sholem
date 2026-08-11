@@ -1,0 +1,84 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global Settings",
+    "description": "Company details, contact info and site-wide defaults"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "default": "TPI Homes"
+    },
+    "legalName": {
+      "type": "string"
+    },
+    "rcNumber": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phonePrimary": {
+      "type": "string"
+    },
+    "phoneSecondary": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "whatsappNumber": {
+      "type": "string",
+      "description": "International format, digits only"
+    },
+    "officeAddress": {
+      "type": "text"
+    },
+    "mapEmbedUrl": {
+      "type": "text",
+      "description": "Google Maps embed src URL"
+    },
+    "officeHours": {
+      "type": "string"
+    },
+    "footerAbout": {
+      "type": "text"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-link"
+    },
+    "defaultSeo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

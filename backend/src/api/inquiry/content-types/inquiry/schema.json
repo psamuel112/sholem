@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inquiries",
+  "info": {
+    "singularName": "inquiry",
+    "pluralName": "inquiries",
+    "displayName": "Inquiry",
+    "description": "Contact and property enquiries submitted from the website"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "general",
+        "property",
+        "service",
+        "property-request"
+      ],
+      "default": "general"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "contacted",
+        "in-progress",
+        "closed"
+      ],
+      "default": "new"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "preferredLocation": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text",
+      "description": "Internal notes for the sales team"
+    },
+    "source": {
+      "type": "string",
+      "default": "website"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property"
+    },
+    "service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
+    }
+  }
+}

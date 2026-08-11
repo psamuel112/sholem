@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_property_specs",
+  "info": {
+    "displayName": "Specification",
+    "icon": "apps"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

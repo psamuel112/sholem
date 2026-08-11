@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_ctas",
+  "info": {
+    "displayName": "Call To Action",
+    "icon": "cursor"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline"
+      ],
+      "default": "primary"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_value_items",
+  "info": {
+    "displayName": "Value Item",
+    "icon": "bulletList"
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Lucide icon name, e.g. shield-check"
+    }
+  }
+}

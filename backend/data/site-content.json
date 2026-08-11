@@ -1,0 +1,230 @@
+{
+  "_comment": "Editorial content for single types, services and featured locations. Sourced from tpihomes.com.ng; edit here to change what `npm run seed` installs, or edit in the Strapi admin after seeding.",
+
+  "global": {
+    "siteName": "TPI Homes",
+    "legalName": "TPI Homes & Properties Limited",
+    "rcNumber": "RC 6943025",
+    "tagline": "Your Trusted Real Estate Agency in Lagos, Nigeria",
+    "description": "TPI Homes & Properties Ltd is a real estate agency in Lagos Nigeria. We provide you with the best real estate investment for maximum ROI.",
+    "logo": "https://www.tpihomes.com.ng/wp-content/uploads/2023/05/Tpi-Homes-and-Properties-logo.png",
+    "phonePrimary": "+234 803 192 0225",
+    "phoneSecondary": "+234 805 037 3288",
+    "email": "info@tpihomes.com.ng",
+    "whatsappNumber": "2348031920225",
+    "officeAddress": "KM 48, Lekki–Epe Expressway, Sangotedo, Lekki, Lagos, Nigeria.",
+    "mapEmbedUrl": "https://www.google.com/maps?q=KM%2048%2C%20Lekki-Epe%20Expressway%2C%20Sangotedo%2C%20Lagos&output=embed",
+    "officeHours": "Monday – Saturday, 9:00am – 6:00pm",
+    "footerAbout": "TPI HOMES & PROPERTIES LIMITED [RC 6943025] is a real estate agency in Lekki, Lagos Nigeria. We specialize in providing top-tier real estate investments for maximum ROI. We are a professional property consultant & brokerage firm with many years of experience in the Lagos real estate market.",
+    "socials": [
+      { "platform": "facebook", "url": "https://www.facebook.com/tpihomesng" },
+      { "platform": "instagram", "url": "https://www.instagram.com/tpihomes_ng" },
+      { "platform": "linkedin", "url": "https://www.linkedin.com/company/tpi-homes-properties-limited/" },
+      { "platform": "youtube", "url": "https://www.youtube.com/@tpihomes/" }
+    ],
+    "defaultSeo": {
+      "metaTitle": "TPI Homes - Your Trusted Real Estate Agency in Lagos Nigeria",
+      "metaDescription": "TPI Homes & Properties Ltd is a real estate agency in Lagos Nigeria. We provide you with the best real estate investment for maximum ROI.",
+      "keywords": "real estate Lagos, land for sale Lagos, Ibeju Lekki land, property investment Nigeria, C of O land Lagos"
+    }
+  },
+
+  "homepage": {
+    "hero": {
+      "eyebrow": "TPI Homes & Properties Limited",
+      "title": "Looking To Invest In Properties With Great ROI?",
+      "subtitle": "We've got you covered. Buying landed properties through TPI Homes & Properties Limited is the easiest thing to do. We are here to lift off the burden and stress associated with property acquisition.",
+      "backgroundImage": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/URBAN-SIGNATURE-LAGOS-ELEKO-IBEJU-LEKKI-Serviced-Plots-3-Bedroom-Bungalows-for-Sale-with-C-of-O-7.jpg",
+      "primaryCta": { "label": "Browse Properties", "href": "/properties", "style": "primary" },
+      "secondaryCta": { "label": "Talk To An Expert", "href": "/contact", "style": "outline" }
+    },
+    "introTitle": "Become A Property Owner Today",
+    "introBody": "We are a professional property consultant & brokerage firm with many years of experience in the Lagos real estate market. We bridge housing gaps and offer real-time solutions to clients across Nigeria and the diaspora.",
+    "stats": [
+      { "value": "500+", "label": "Happy Clients" },
+      { "value": "40+", "label": "Estates Sold" },
+      { "value": "150%", "label": "Avg. Appreciation" },
+      { "value": "10+", "label": "Years Experience" }
+    ],
+    "featuredPropertiesTitle": "Featured Properties",
+    "featuredPropertiesSubtitle": "Hand-picked estates with verified titles and strong capital appreciation.",
+    "servicesTitle": "What We Do",
+    "servicesSubtitle": "End-to-end real estate services, from acquisition to management.",
+    "locationsTitle": "Top Locations",
+    "locationsSubtitle": "Premium Locations With 150% Appreciation Rates in 12 Months",
+    "whyChooseTitle": "Why Choose TPI Homes",
+    "whyChooseSubtitle": "We make land and home ownership straightforward, secure and profitable.",
+    "whyChooseItems": [
+      {
+        "title": "Verified Titles",
+        "description": "Every estate we sell is vetted by our in-house lawyers and surveyors. C of O, Governor's Consent and Excision documents are confirmed before a listing goes live.",
+        "icon": "shield-check"
+      },
+      {
+        "title": "Flexible Payment Plans",
+        "description": "Spread payment over up to 12 months with transparent terms. Start with an initial deposit and build up at your own pace.",
+        "icon": "wallet"
+      },
+      {
+        "title": "High ROI Locations",
+        "description": "We focus on corridors like Ibeju-Lekki, Epe and Ibadan where infrastructure is driving rapid capital appreciation.",
+        "icon": "trending-up"
+      },
+      {
+        "title": "End-To-End Support",
+        "description": "From inspection to allocation and documentation, our team stays with you long after the sale is closed.",
+        "icon": "users"
+      },
+      {
+        "title": "No Hidden Charges",
+        "description": "Prices are stated upfront. Where agency or development levies apply, we tell you before you commit.",
+        "icon": "receipt"
+      },
+      {
+        "title": "Free Inspections",
+        "description": "Book a scheduled inspection and see the land for yourself before making any payment.",
+        "icon": "map-pin"
+      }
+    ],
+    "ctaTitle": "Ready To Own Your Next Property?",
+    "ctaBody": "Speak with our advisors today for premium listings, expert advice and personalised solutions tailored to your goals.",
+    "ctaButton": { "label": "Book A Free Consultation", "href": "/contact", "style": "primary" },
+    "ctaBackground": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/THE-RIVIERA-BY-LANDVEST-Premium-Atlantic-Front-Land-for-Sale-Along-Coastal-Highway-Lagos-1.jpg",
+    "seo": {
+      "metaTitle": "TPI Homes - Trusted Real Estate Agency in Lagos, Nigeria",
+      "metaDescription": "Buy verified land and homes in Lagos, Ibeju-Lekki, Epe and beyond. Flexible payment plans, C of O titles and expert guidance from TPI Homes."
+    }
+  },
+
+  "about": {
+    "title": "About Us",
+    "subtitle": "A professional property consultant and brokerage firm bridging housing gaps across Nigeria and the diaspora.",
+    "heroImage": "https://www.tpihomes.com.ng/wp-content/uploads/2026/06/PROVIDENCE-COURT-AWOYAYA-LUXURY-LIVING-REDEFINED-IN-THE-HEART-OF-IBEJU-LEKKI-12.jpg",
+    "storyTitle": "About TPI Homes",
+    "story": "TPI HOMES & PROPERTIES LIMITED [RC 6943025] is a real estate agency in Lagos, Nigeria. We specialize in providing top-tier real estate investments for maximum ROI.\n\nWe are a professional property consultant & brokerage firm with many years of experience in the Lagos real estate market. We bridge housing gaps and offer real-time solutions to clients across Nigeria and the diaspora.\n\nWe offer real estate services with world-class professionalism in the achievement of seamless transactions of legal interest in real estate between Developers, Owners and Sellers on one side, and Investors, Tenants and Buyers on the other.\n\nWith our versatile experience in the real estate sector covering various aspects of the profession, we are renowned for Real Estate Agency, Property Management & Development, Facility Management, and Real Estate Investment Consulting.",
+    "visionTitle": "Our Vision",
+    "vision": "Our VISION is to make land and home ownership a reality for all, because we believe everyone should own a landed property and that should not be a herculean task doing so.",
+    "missionTitle": "Our Mission",
+    "mission": "Our MISSION is to discover opportunities and implement cutting-edge strategies to deliver affordable, fast-developing lands to our customers, and expose them to avenues that take them steps closer to achieving their real estate goals.",
+    "valuesTitle": "Our Core Values",
+    "values": [
+      { "title": "Integrity", "description": "Clear documentation and honest pricing on every transaction. What we promise is what we deliver.", "icon": "scale" },
+      { "title": "Professionalism", "description": "World-class standards backed by seasoned lawyers, surveyors and consultants.", "icon": "briefcase" },
+      { "title": "Client First", "description": "Our clients' interests lead every recommendation we make, before, during and after the sale.", "icon": "heart-handshake" },
+      { "title": "Excellence", "description": "We continually refine our process so acquiring property is seamless and stress-free.", "icon": "award" }
+    ],
+    "stats": [
+      { "value": "500+", "label": "Happy Clients" },
+      { "value": "40+", "label": "Estates Sold" },
+      { "value": "10+", "label": "Years Experience" },
+      { "value": "8+", "label": "States Covered" }
+    ],
+    "founderName": "Olaitan Kolawole",
+    "founderRole": "Founder & Chief Executive Officer",
+    "founderBio": "TPI Homes was founded by Olaitan Kolawole, a member of a reputable network of real estate marketing associations in Lagos, Nigeria — the Billionaire Realtors Group (BRG) amongst others — working alongside seasoned lawyers and surveyors. He holds a bachelor's degree in Accounting along with other certifications in the Real Estate and IT sectors. A multiple award-winning and passionate digital entrepreneur, he serves as a real estate investment consultant to clients across Nigeria and the diaspora.",
+    "seo": {
+      "metaTitle": "About TPI Homes & Properties Limited",
+      "metaDescription": "Learn about TPI Homes & Properties Limited [RC 6943025], a professional real estate consultancy and brokerage firm based in Lekki, Lagos, Nigeria."
+    }
+  },
+
+  "services": [
+    {
+      "title": "Lands & Property Sales",
+      "slug": "lands-and-property-sales",
+      "summary": "We specialize in the sale of land and houses. We offer flexible payment plans and incentives to make acquiring your property easier.",
+      "description": "Whether you are buying your first plot or expanding a portfolio, we match you with estates that fit your budget and investment horizon.\n\nEvery listing we present has been vetted for title validity and developer track record. We handle inspection scheduling, price negotiation, allocation follow-up and documentation, so you can invest with confidence from anywhere in the world.",
+      "icon": "home",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/URBAN-SIGNATURE-LAGOS-ELEKO-IBEJU-LEKKI-Serviced-Plots-3-Bedroom-Bungalows-for-Sale-with-C-of-O-7.jpg",
+      "order": 1,
+      "featured": true,
+      "highlights": [
+        { "title": "Verified Titles", "description": "C of O, Governor's Consent and Excision documents confirmed before listing.", "icon": "file-check" },
+        { "title": "Flexible Payment", "description": "Spread payment across up to 12 months with transparent terms.", "icon": "calendar-clock" },
+        { "title": "Free Inspection", "description": "Scheduled site inspections before you commit a single naira.", "icon": "map-pin" }
+      ],
+      "cta": { "label": "View Available Properties", "href": "/properties", "style": "primary" }
+    },
+    {
+      "title": "Real Estate Consultancy",
+      "slug": "real-estate-consultancy",
+      "summary": "We draw on our vast and deep knowledge of the real estate industry in giving our clients guidance and advisory services.",
+      "description": "Our consultancy practice helps investors decide what to buy, where to buy, and when to exit.\n\nWe analyse infrastructure plans, developer credibility and comparable pricing across the corridors we cover, then translate that into a plan matched to your capital and risk appetite — whether you are buying to build, to hold, or to resell.",
+      "icon": "line-chart",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/THE-RIVIERA-BY-LANDVEST-Premium-Atlantic-Front-Land-for-Sale-Along-Coastal-Highway-Lagos-1.jpg",
+      "order": 2,
+      "featured": true,
+      "highlights": [
+        { "title": "Market Analysis", "description": "Location-by-location appreciation data across Lagos and beyond.", "icon": "trending-up" },
+        { "title": "Due Diligence", "description": "Title verification and developer background checks before you buy.", "icon": "search-check" },
+        { "title": "Portfolio Strategy", "description": "Entry and exit planning matched to your investment timeline.", "icon": "target" }
+      ],
+      "cta": { "label": "Book A Consultation", "href": "/contact", "style": "primary" }
+    },
+    {
+      "title": "Property Management",
+      "slug": "property-management",
+      "summary": "We bring to bear our experience and expertise in the management of luxury and state-of-the-art property for sale or rent.",
+      "description": "Owning property should not become a second job. We manage residential and commercial assets end to end on behalf of local and diaspora owners.\n\nOur team handles tenant sourcing and screening, rent collection and remittance, routine maintenance, statutory compliance and periodic condition reporting, so your asset stays occupied, compliant and well kept.",
+      "icon": "building-2",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/06/PROVIDENCE-COURT-AWOYAYA-LUXURY-LIVING-REDEFINED-IN-THE-HEART-OF-IBEJU-LEKKI-12.jpg",
+      "order": 3,
+      "featured": true,
+      "highlights": [
+        { "title": "Tenant Management", "description": "Sourcing, screening and rent collection handled for you.", "icon": "users" },
+        { "title": "Facility Upkeep", "description": "Routine maintenance and repairs coordinated by our team.", "icon": "wrench" },
+        { "title": "Owner Reporting", "description": "Periodic statements and condition reports, wherever you live.", "icon": "file-text" }
+      ],
+      "cta": { "label": "Discuss Your Property", "href": "/contact", "style": "primary" }
+    },
+    {
+      "title": "Property Request Service",
+      "slug": "property-request",
+      "summary": "Can't find what you're looking for? Tell us your budget, preferred location and property type, and we'll source it for you.",
+      "description": "Our listings show a fraction of what we can access. Many of the best opportunities are off-market or released to our network before public launch.\n\nShare your requirements — budget, location, property type and timeline — and our team will search our developer network and revert with matching options, including pre-launch pricing where available.",
+      "icon": "search",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/05/MADISON-GARDEN-ESTATE-CHEVRON-LEKKI-premium-buy-and-build-land-in-chevron-lekki-1.jpg",
+      "order": 4,
+      "featured": false,
+      "highlights": [
+        { "title": "Off-Market Access", "description": "Opportunities released to our network before public launch.", "icon": "key-round" },
+        { "title": "Budget Matched", "description": "Options filtered to what you can realistically commit.", "icon": "wallet" },
+        { "title": "Fast Turnaround", "description": "We revert with matching options within a few working days.", "icon": "zap" }
+      ],
+      "cta": { "label": "Submit A Request", "href": "/property-request", "style": "primary" }
+    }
+  ],
+
+  "featuredCities": [
+    {
+      "name": "Lagos State",
+      "description": "Nigeria's commercial capital and its most active property market, spanning the Island, Mainland and the fast-expanding Lekki–Epe corridor.",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/THE-RIVIERA-BY-LANDVEST-Premium-Atlantic-Front-Land-for-Sale-Along-Coastal-Highway-Lagos-1.jpg"
+    },
+    {
+      "name": "Ibeju Lekki",
+      "description": "Home to the Dangote Refinery, Lekki Free Trade Zone and the proposed international airport — the highest-growth corridor in Lagos.",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/URBAN-SIGNATURE-LAGOS-ELEKO-IBEJU-LEKKI-Serviced-Plots-3-Bedroom-Bungalows-for-Sale-with-C-of-O-7.jpg"
+    },
+    {
+      "name": "Epe",
+      "description": "An emerging investment destination along the Lekki–Epe axis, offering affordable entry prices with strong appreciation potential.",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/04/IMG-20260418-WA0010.jpg"
+    },
+    {
+      "name": "Ajah",
+      "description": "A well-established residential hub on the Lekki peninsula with mature infrastructure and steady rental demand.",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/06/PROVIDENCE-COURT-AWOYAYA-LUXURY-LIVING-REDEFINED-IN-THE-HEART-OF-IBEJU-LEKKI-12.jpg"
+    },
+    {
+      "name": "Ogun State",
+      "description": "Bordering Lagos, Ogun offers accessible land prices with growing industrial and residential development around Mowe, Ofada and Simawa.",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/03/INTRODUCING-OAK-VILLE-GREEN-ESTATE-MOWE-OFADA-OGUN-STATE-OBAFEMI-OWODE-LGA-1.jpg"
+    },
+    {
+      "name": "Lekki",
+      "description": "Premium residential and commercial addresses with world-class amenities and consistently strong capital appreciation.",
+      "image": "https://www.tpihomes.com.ng/wp-content/uploads/2026/05/MADISON-GARDEN-ESTATE-CHEVRON-LEKKI-premium-buy-and-build-land-in-chevron-lekki-1.jpg"
+    }
+  ]
+}

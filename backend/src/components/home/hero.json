@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_home_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "picture"
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "primaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

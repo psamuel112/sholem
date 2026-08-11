@@ -1,0 +1,128 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": "Property listings shown on the public website"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "priceLabel": {
+      "type": "string",
+      "description": "Overrides price, e.g. \"Price on request\""
+    },
+    "excerpt": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bedrooms": {
+      "type": "integer"
+    },
+    "bathrooms": {
+      "type": "integer"
+    },
+    "toilets": {
+      "type": "integer"
+    },
+    "plotSize": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "titleDocument": {
+      "type": "string",
+      "description": "e.g. C of O, Governor’s Consent"
+    },
+    "paymentPlan": {
+      "type": "text"
+    },
+    "initialDeposit": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "landmarks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.spec"
+    },
+    "extraSpecs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "property.spec"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "propertyTypes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::property-type.property-type",
+      "inversedBy": "properties"
+    },
+    "offerTypes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::offer-type.offer-type",
+      "inversedBy": "properties"
+    },
+    "cities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::city.city",
+      "inversedBy": "properties"
+    },
+    "features": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::feature.feature",
+      "inversedBy": "properties"
+    }
+  }
+}

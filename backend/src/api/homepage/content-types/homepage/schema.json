@@ -1,0 +1,102 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.hero"
+    },
+    "introTitle": {
+      "type": "string"
+    },
+    "introBody": {
+      "type": "text"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    },
+    "featuredPropertiesTitle": {
+      "type": "string",
+      "default": "Featured Properties"
+    },
+    "featuredPropertiesSubtitle": {
+      "type": "text"
+    },
+    "servicesTitle": {
+      "type": "string",
+      "default": "What We Do"
+    },
+    "servicesSubtitle": {
+      "type": "text"
+    },
+    "locationsTitle": {
+      "type": "string",
+      "default": "Top Locations"
+    },
+    "locationsSubtitle": {
+      "type": "text"
+    },
+    "whyChooseTitle": {
+      "type": "string",
+      "default": "Why Choose TPI Homes"
+    },
+    "whyChooseSubtitle": {
+      "type": "text"
+    },
+    "whyChooseItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.value-item"
+    },
+    "ctaTitle": {
+      "type": "string"
+    },
+    "ctaBody": {
+      "type": "text"
+    },
+    "ctaButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    },
+    "ctaBackground": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featuredProperties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property.property"
+    },
+    "featuredServices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "featuredCities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::city.city"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
