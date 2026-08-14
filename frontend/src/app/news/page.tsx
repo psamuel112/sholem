@@ -2,7 +2,6 @@ import { CalendarDays } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { PageHero } from '@/components/shared/PageHero';
 import { Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
