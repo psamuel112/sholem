@@ -58,7 +58,7 @@ export function Header({ global, logoUrl, logo }: HeaderProps) {
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
-  const siteName = global?.siteName ?? 'TPI Homes';
+  const siteName = global?.siteName ?? 'Sholem Properties';
 
   return (
     <header

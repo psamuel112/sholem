@@ -52,7 +52,7 @@ export default async function HomePage() {
         {heroImage ? (
           <Image
             src={heroImage}
-            alt={altText(hero?.backgroundImage, 'TPI Homes property')}
+            alt={altText(hero?.backgroundImage, 'Sholem Properties property')}
             fill
             priority
             sizes="100vw"
@@ -101,7 +101,7 @@ export default async function HomePage() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <SectionHeading
-                eyebrow="About TPI Homes"
+                eyebrow="About Sholem Properties"
                 title={home?.introTitle ?? 'Become A Property Owner Today'}
                 subtitle={home?.introBody}
                 align="left"
@@ -193,7 +193,7 @@ export default async function HomePage() {
         <Section className="bg-brand-900">
           <SectionHeading
             eyebrow="Why Choose Us"
-            title={home.whyChooseTitle ?? 'Why Choose TPI Homes'}
+            title={home.whyChooseTitle ?? 'Why Choose Sholem Properties'}
             subtitle={home.whyChooseSubtitle}
             tone="light"
           />
@@ -287,7 +287,7 @@ export default async function HomePage() {
             </Button>
             {global?.whatsappNumber || global?.phonePrimary ? (
               <Button
-                href={whatsappLink(global, 'Hello TPI Homes, I would like to make an enquiry.')}
+                href={whatsappLink(global, 'Hello Sholem Properties, I would like to make an enquiry.')}
                 variant="whatsapp"
                 size="lg"
                 external

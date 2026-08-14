@@ -23,7 +23,7 @@ interface FooterProps {
 }
 
 export function Footer({ global, logoUrl, logo, services }: FooterProps) {
-  const siteName = global?.siteName ?? 'TPI Homes';
+  const siteName = global?.siteName ?? 'Sholem Properties';
   const year = new Date().getFullYear();
 
   return (

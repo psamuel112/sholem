@@ -9,7 +9,7 @@ export function WhatsAppFloat({ global }: { global: Global | null }) {
 
   const href = whatsappLink(
     number,
-    `Hello ${global?.siteName ?? 'TPI Homes'}, I'd like to make an enquiry about a property.`
+    `Hello ${global?.siteName ?? 'Sholem Properties'}, I'd like to make an enquiry about a property.`
   );
 
   return (

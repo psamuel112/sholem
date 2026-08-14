@@ -13,7 +13,7 @@ export const revalidate = 600;
 export const metadata: Metadata = {
   title: 'News & Updates',
   description:
-    'The latest news, offers and real estate insights from TPI Homes and Properties Limited.',
+    'The latest news, offers and real estate insights from Sholem Properties.',
   alternates: { canonical: '/news' },
 };
 
@@ -24,7 +24,7 @@ export default async function NewsPage() {
     <>
       <PageHero
         title="News & Updates"
-        subtitle="Announcements, promotions and insights from the TPI Homes team."
+        subtitle="Announcements, promotions and insights from the Sholem Properties team."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'News' }]}
       />
 

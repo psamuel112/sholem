@@ -13,7 +13,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: 'Our Services',
   description:
-    'Property sales, brokerage, real estate consultancy, facility management and property development services from TPI Homes.',
+    'Property sales, brokerage, real estate consultancy, facility management and property development services from Sholem Properties.',
   alternates: { canonical: '/services' },
 };
 
@@ -58,7 +58,7 @@ export default async function ServicesPage() {
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Button>
             <Button
-              href={whatsappLink(global, 'Hello TPI Homes, I would like to discuss your services.')}
+              href={whatsappLink(global, 'Hello Sholem Properties, I would like to discuss your services.')}
               variant="whatsapp"
               size="lg"
               external

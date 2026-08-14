@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# TPI Homes — deployment helper
+# Sholem Properties — deployment helper
 #
 # Pushes the repo to GitHub and deploys the Next.js frontend to Vercel.
 # Strapi is deployed separately via the Render Blueprint (see README) because it
@@ -38,7 +38,7 @@ deploy_github() {
   else
     info "Creating private repo $user/tpi-homes"
     gh repo create "$user/tpi-homes" --private \
-      --description "TPI Homes and Properties — Next.js frontend with Strapi CMS"
+      --description "Sholem Properties — Next.js frontend with Strapi CMS"
   fi
 
   git remote get-url origin >/dev/null 2>&1 \
@@ -154,7 +154,7 @@ case "${1:-}" in
   vercel) shift; deploy_vercel "$@" ;;
   check)  shift; check_strapi  "$@" ;;
   *) cat <<'EOF'
-TPI Homes deployment helper
+Sholem Properties deployment helper
 
   ./tools/deploy.sh github <username>   Create the GitHub repo and push
   ./tools/deploy.sh vercel              Link and deploy the frontend to Vercel

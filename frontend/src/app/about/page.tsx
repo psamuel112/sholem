@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description =
     about?.seo?.metaDescription ||
     about?.subtitle ||
-    'Learn about TPI Homes and Properties — our story, mission, vision and values.';
+    'Learn about Sholem Properties — our story, mission, vision and values.';
 
   return {
     title,
@@ -37,10 +37,10 @@ export default async function AboutPage() {
   return (
     <>
       <PageHero
-        title={about?.title ?? 'About TPI Homes'}
+        title={about?.title ?? 'About Sholem Properties'}
         subtitle={about?.subtitle}
         image={heroImage}
-        imageAlt={altText(about?.heroImage, 'TPI Homes office')}
+        imageAlt={altText(about?.heroImage, 'Sholem Properties office')}
         crumbs={[{ label: 'Home', href: '/' }, { label: 'About Us' }]}
       />
 

@@ -68,6 +68,22 @@ services:
       - key: INQUIRY_NOTIFICATION_EMAIL
         sync: false
 
+      # ---- Email delivery (Resend SMTP via the Strapi nodemailer provider) ----
+      # SMTP_PASS is your Resend API key (https://resend.com/api-keys).
+      # EMAIL_FROM must use a domain verified in Resend.
+      - key: SMTP_HOST
+        value: smtp.resend.com
+      - key: SMTP_PORT
+        value: '465'
+      - key: SMTP_USER
+        value: resend
+      - key: SMTP_PASS
+        sync: false
+      - key: EMAIL_FROM
+        value: 'Sholem Properties <noreply@tpihomes.com.ng>'
+      - key: EMAIL_REPLY_TO
+        value: info@tpihomes.com.ng
+
       # ---- Media storage ----
       # Render's filesystem is ephemeral on the free plan, so uploads must go to
       # Cloudinary. Without these the local provider is used and images are lost

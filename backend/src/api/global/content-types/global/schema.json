@@ -14,7 +14,7 @@
     "siteName": {
       "type": "string",
       "required": true,
-      "default": "TPI Homes"
+      "default": "Sholem Properties"
     },
     "legalName": {
       "type": "string"

@@ -89,13 +89,22 @@ module.exports = createCoreController('api::inquiry.inquiry', ({ strapi }) => ({
       data.message,
     ].filter(Boolean);
 
-    try {
-      await strapi.plugin('email').service('email').send({
+    // The default sendmail provider can hang indefinitely on hosts without a
+    // sendmail binary (e.g. Render's free tier), so bound the send with a
+    // timeout. The record is already stored — email must never delay the reply.
+    const send = () =>
+      strapi.plugin('email').service('email').send({
         to,
         replyTo: data.email,
-        subject: `[TPI Homes] New ${data.type} inquiry from ${data.name}`,
+        subject: `[Sholem Properties] New ${data.type} inquiry from ${data.name}`,
         text: lines.join('\n'),
       });
+    const timeout = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('email send timed out after 10s')), 10_000)
+    );
+
+    try {
+      await Promise.race([send(), timeout]);
     } catch (error) {
       strapi.log.warn(`Inquiry ${inquiry.documentId} saved but email failed: ${error.message}`);
     }

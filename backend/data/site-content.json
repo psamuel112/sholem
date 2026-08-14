@@ -2,11 +2,11 @@
   "_comment": "Editorial content for single types, services and featured locations. Sourced from tpihomes.com.ng; edit here to change what `npm run seed` installs, or edit in the Strapi admin after seeding.",
 
   "global": {
-    "siteName": "TPI Homes",
-    "legalName": "TPI Homes & Properties Limited",
+    "siteName": "Sholem Properties",
+    "legalName": "Sholem Properties Limited",
     "rcNumber": "RC 6943025",
     "tagline": "Your Trusted Real Estate Agency in Lagos, Nigeria",
-    "description": "TPI Homes & Properties Ltd is a real estate agency in Lagos Nigeria. We provide you with the best real estate investment for maximum ROI.",
+    "description": "Sholem Properties Ltd is a real estate agency in Lagos Nigeria. We provide you with the best real estate investment for maximum ROI.",
     "logo": "https://www.tpihomes.com.ng/wp-content/uploads/2023/05/Tpi-Homes-and-Properties-logo.png",
     "phonePrimary": "+234 803 192 0225",
     "phoneSecondary": "+234 805 037 3288",
@@ -15,7 +15,7 @@
     "officeAddress": "KM 48, Lekki–Epe Expressway, Sangotedo, Lekki, Lagos, Nigeria.",
     "mapEmbedUrl": "https://www.google.com/maps?q=KM%2048%2C%20Lekki-Epe%20Expressway%2C%20Sangotedo%2C%20Lagos&output=embed",
     "officeHours": "Monday – Saturday, 9:00am – 6:00pm",
-    "footerAbout": "TPI HOMES & PROPERTIES LIMITED [RC 6943025] is a real estate agency in Lekki, Lagos Nigeria. We specialize in providing top-tier real estate investments for maximum ROI. We are a professional property consultant & brokerage firm with many years of experience in the Lagos real estate market.",
+    "footerAbout": "SHOLEM PROPERTIES LIMITED [RC 6943025] is a real estate agency in Lekki, Lagos Nigeria. We specialize in providing top-tier real estate investments for maximum ROI. We are a professional property consultant & brokerage firm with many years of experience in the Lagos real estate market.",
     "socials": [
       { "platform": "facebook", "url": "https://www.facebook.com/tpihomesng" },
       { "platform": "instagram", "url": "https://www.instagram.com/tpihomes_ng" },
@@ -23,17 +23,17 @@
       { "platform": "youtube", "url": "https://www.youtube.com/@tpihomes/" }
     ],
     "defaultSeo": {
-      "metaTitle": "TPI Homes - Your Trusted Real Estate Agency in Lagos Nigeria",
-      "metaDescription": "TPI Homes & Properties Ltd is a real estate agency in Lagos Nigeria. We provide you with the best real estate investment for maximum ROI.",
+      "metaTitle": "Sholem Properties - Your Trusted Real Estate Agency in Lagos Nigeria",
+      "metaDescription": "Sholem Properties Ltd is a real estate agency in Lagos Nigeria. We provide you with the best real estate investment for maximum ROI.",
       "keywords": "real estate Lagos, land for sale Lagos, Ibeju Lekki land, property investment Nigeria, C of O land Lagos"
     }
   },
 
   "homepage": {
     "hero": {
-      "eyebrow": "TPI Homes & Properties Limited",
+      "eyebrow": "Sholem Properties Limited",
       "title": "Looking To Invest In Properties With Great ROI?",
-      "subtitle": "We've got you covered. Buying landed properties through TPI Homes & Properties Limited is the easiest thing to do. We are here to lift off the burden and stress associated with property acquisition.",
+      "subtitle": "We've got you covered. Buying landed properties through Sholem Properties Limited is the easiest thing to do. We are here to lift off the burden and stress associated with property acquisition.",
       "backgroundImage": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/URBAN-SIGNATURE-LAGOS-ELEKO-IBEJU-LEKKI-Serviced-Plots-3-Bedroom-Bungalows-for-Sale-with-C-of-O-7.jpg",
       "primaryCta": { "label": "Browse Properties", "href": "/properties", "style": "primary" },
       "secondaryCta": { "label": "Talk To An Expert", "href": "/contact", "style": "outline" }
@@ -52,7 +52,7 @@
     "servicesSubtitle": "End-to-end real estate services, from acquisition to management.",
     "locationsTitle": "Top Locations",
     "locationsSubtitle": "Premium Locations With 150% Appreciation Rates in 12 Months",
-    "whyChooseTitle": "Why Choose TPI Homes",
+    "whyChooseTitle": "Why Choose Sholem Properties",
     "whyChooseSubtitle": "We make land and home ownership straightforward, secure and profitable.",
     "whyChooseItems": [
       {
@@ -91,8 +91,8 @@
     "ctaButton": { "label": "Book A Free Consultation", "href": "/contact", "style": "primary" },
     "ctaBackground": "https://www.tpihomes.com.ng/wp-content/uploads/2026/07/THE-RIVIERA-BY-LANDVEST-Premium-Atlantic-Front-Land-for-Sale-Along-Coastal-Highway-Lagos-1.jpg",
     "seo": {
-      "metaTitle": "TPI Homes - Trusted Real Estate Agency in Lagos, Nigeria",
-      "metaDescription": "Buy verified land and homes in Lagos, Ibeju-Lekki, Epe and beyond. Flexible payment plans, C of O titles and expert guidance from TPI Homes."
+      "metaTitle": "Sholem Properties - Trusted Real Estate Agency in Lagos, Nigeria",
+      "metaDescription": "Buy verified land and homes in Lagos, Ibeju-Lekki, Epe and beyond. Flexible payment plans, C of O titles and expert guidance from Sholem Properties."
     }
   },
 
@@ -100,8 +100,8 @@
     "title": "About Us",
     "subtitle": "A professional property consultant and brokerage firm bridging housing gaps across Nigeria and the diaspora.",
     "heroImage": "https://www.tpihomes.com.ng/wp-content/uploads/2026/06/PROVIDENCE-COURT-AWOYAYA-LUXURY-LIVING-REDEFINED-IN-THE-HEART-OF-IBEJU-LEKKI-12.jpg",
-    "storyTitle": "About TPI Homes",
-    "story": "TPI HOMES & PROPERTIES LIMITED [RC 6943025] is a real estate agency in Lagos, Nigeria. We specialize in providing top-tier real estate investments for maximum ROI.\n\nWe are a professional property consultant & brokerage firm with many years of experience in the Lagos real estate market. We bridge housing gaps and offer real-time solutions to clients across Nigeria and the diaspora.\n\nWe offer real estate services with world-class professionalism in the achievement of seamless transactions of legal interest in real estate between Developers, Owners and Sellers on one side, and Investors, Tenants and Buyers on the other.\n\nWith our versatile experience in the real estate sector covering various aspects of the profession, we are renowned for Real Estate Agency, Property Management & Development, Facility Management, and Real Estate Investment Consulting.",
+    "storyTitle": "About Sholem Properties",
+    "story": "SHOLEM PROPERTIES LIMITED [RC 6943025] is a real estate agency in Lagos, Nigeria. We specialize in providing top-tier real estate investments for maximum ROI.\n\nWe are a professional property consultant & brokerage firm with many years of experience in the Lagos real estate market. We bridge housing gaps and offer real-time solutions to clients across Nigeria and the diaspora.\n\nWe offer real estate services with world-class professionalism in the achievement of seamless transactions of legal interest in real estate between Developers, Owners and Sellers on one side, and Investors, Tenants and Buyers on the other.\n\nWith our versatile experience in the real estate sector covering various aspects of the profession, we are renowned for Real Estate Agency, Property Management & Development, Facility Management, and Real Estate Investment Consulting.",
     "visionTitle": "Our Vision",
     "vision": "Our VISION is to make land and home ownership a reality for all, because we believe everyone should own a landed property and that should not be a herculean task doing so.",
     "missionTitle": "Our Mission",
@@ -121,10 +121,10 @@
     ],
     "founderName": "Olaitan Kolawole",
     "founderRole": "Founder & Chief Executive Officer",
-    "founderBio": "TPI Homes was founded by Olaitan Kolawole, a member of a reputable network of real estate marketing associations in Lagos, Nigeria — the Billionaire Realtors Group (BRG) amongst others — working alongside seasoned lawyers and surveyors. He holds a bachelor's degree in Accounting along with other certifications in the Real Estate and IT sectors. A multiple award-winning and passionate digital entrepreneur, he serves as a real estate investment consultant to clients across Nigeria and the diaspora.",
+    "founderBio": "Sholem Properties was founded by Olaitan Kolawole, a member of a reputable network of real estate marketing associations in Lagos, Nigeria — the Billionaire Realtors Group (BRG) amongst others — working alongside seasoned lawyers and surveyors. He holds a bachelor's degree in Accounting along with other certifications in the Real Estate and IT sectors. A multiple award-winning and passionate digital entrepreneur, he serves as a real estate investment consultant to clients across Nigeria and the diaspora.",
     "seo": {
-      "metaTitle": "About TPI Homes & Properties Limited",
-      "metaDescription": "Learn about TPI Homes & Properties Limited [RC 6943025], a professional real estate consultancy and brokerage firm based in Lekki, Lagos, Nigeria."
+      "metaTitle": "About Sholem Properties Limited",
+      "metaDescription": "Learn about Sholem Properties Limited [RC 6943025], a professional real estate consultancy and brokerage firm based in Lekki, Lagos, Nigeria."
     }
   },
 

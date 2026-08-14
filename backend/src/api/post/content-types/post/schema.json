@@ -37,7 +37,7 @@
     },
     "author": {
       "type": "string",
-      "default": "TPI Homes"
+      "default": "Sholem Properties"
     },
     "seo": {
       "type": "component",

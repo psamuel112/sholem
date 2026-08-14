@@ -2,7 +2,7 @@
 """
 One-off content extraction helper.
 
-Reads the legacy TPI Homes WordPress site and writes a normalised JSON payload
+Reads the legacy Sholem Properties WordPress site and writes a normalised JSON payload
 (`backend/data/seed-data.json`) that the Strapi seed script consumes.
 
 This is a migration/bootstrap tool only. It is not part of the runtime app and

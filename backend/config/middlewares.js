@@ -20,8 +20,14 @@ module.exports = ({ env }) => [
   {
     name: 'strapi::cors',
     config: {
-      // Comma-separated list of the sites allowed to call this API.
-      origin: env.array('CORS_ORIGINS', ['http://localhost:3000']),
+      // Comma-separated list of the sites allowed to call this API. The
+      // deployed domains are part of the default so the enquiry form works
+      // even before CORS_ORIGINS is set on the host.
+      origin: env.array('CORS_ORIGINS', [
+        'http://localhost:3000',
+        'https://sholem-properties.vercel.app',
+        'https://tpi-homes.vercel.app',
+      ]),
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
     },

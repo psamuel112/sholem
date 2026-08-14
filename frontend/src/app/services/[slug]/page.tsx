@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = service.seo?.metaTitle || service.title;
   const description =
-    service.seo?.metaDescription || service.summary || `${service.title} from TPI Homes.`;
+    service.seo?.metaDescription || service.summary || `${service.title} from Sholem Properties.`;
   const image = mediaUrl(service.seo?.shareImage?.url ?? service.image?.url);
 
   return {
@@ -56,7 +56,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   const image = mediaUrl(service.image?.url);
   const others = allServices.filter((item) => item.slug !== service.slug).slice(0, 3);
-  const enquiryMessage = `Hello TPI Homes, I would like to know more about your ${service.title} service.`;
+  const enquiryMessage = `Hello Sholem Properties, I would like to know more about your ${service.title} service.`;
 
   return (
     <>

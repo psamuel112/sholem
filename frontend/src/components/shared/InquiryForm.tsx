@@ -93,7 +93,7 @@ export function InquiryForm({
           </button>
           {global?.whatsappNumber || global?.phonePrimary ? (
             <a
-              href={whatsappLink(global, 'Hello TPI Homes, I just submitted an enquiry.')}
+              href={whatsappLink(global, 'Hello Sholem Properties, I just submitted an enquiry.')}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#1fb855]"

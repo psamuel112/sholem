@@ -62,5 +62,26 @@ module.exports = ({ env }) => {
         },
       },
     },
+    // Transactional email via Resend SMTP (Strapi defaults to a local
+    // sendmail provider that does not exist on Render). SMTP_PASS is the
+    // Resend API key, and EMAIL_FROM must use a domain verified in Resend.
+    email: {
+      config: {
+        provider: 'nodemailer',
+        providerOptions: {
+          host: env('SMTP_HOST', 'smtp.resend.com'),
+          port: env.int('SMTP_PORT', 465),
+          secure: env.bool('SMTP_SECURE', true),
+          auth: {
+            user: env('SMTP_USER', 'resend'),
+            pass: env('SMTP_PASS'),
+          },
+        },
+        settings: {
+          defaultFrom: env('EMAIL_FROM', 'Sholem Properties <noreply@tpihomes.com.ng>'),
+          defaultReplyTo: env('EMAIL_REPLY_TO', 'info@tpihomes.com.ng'),
+        },
+      },
+    },
   };
 };

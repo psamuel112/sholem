@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = property.seo?.metaTitle || property.title;
   const description =
-    property.seo?.metaDescription || property.excerpt || `${property.title} — available through TPI Homes.`;
+    property.seo?.metaDescription || property.excerpt || `${property.title} — available through Sholem Properties.`;
   const image = mediaUrl(property.seo?.shareImage?.url ?? property.featuredImage?.url);
 
   return {
@@ -83,7 +83,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
   const images = buildGalleryImages(property);
   const status = property.status ? STATUS_LABELS[property.status] : undefined;
   const location = [property.address, property.cities?.[0]?.name].filter(Boolean).join(', ');
-  const enquiryMessage = `Hello TPI Homes, I am interested in ${property.title}.`;
+  const enquiryMessage = `Hello Sholem Properties, I am interested in ${property.title}.`;
 
   const specs = [
     property.bedrooms ? { icon: BedDouble, label: 'Bedrooms', value: property.bedrooms } : null,

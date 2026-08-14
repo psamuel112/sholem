@@ -49,7 +49,7 @@
     },
     "whyChooseTitle": {
       "type": "string",
-      "default": "Why Choose TPI Homes"
+      "default": "Why Choose Sholem Properties"
     },
     "whyChooseSubtitle": {
       "type": "text"

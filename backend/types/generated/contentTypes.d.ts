@@ -595,7 +595,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     rcNumber: Schema.Attribute.String;
     siteName: Schema.Attribute.String &
       Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<'TPI Homes'>;
+      Schema.Attribute.DefaultTo<'Sholem Properties'>;
     socials: Schema.Attribute.Component<'shared.social-link', true>;
     tagline: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -659,7 +659,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     whyChooseItems: Schema.Attribute.Component<'shared.value-item', true>;
     whyChooseSubtitle: Schema.Attribute.Text;
     whyChooseTitle: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Why Choose TPI Homes'>;
+      Schema.Attribute.DefaultTo<'Why Choose Sholem Properties'>;
   };
 }
 
@@ -756,7 +756,7 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    author: Schema.Attribute.String & Schema.Attribute.DefaultTo<'TPI Homes'>;
+    author: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Sholem Properties'>;
     content: Schema.Attribute.RichText;
     coverImage: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;

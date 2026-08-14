@@ -12,7 +12,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with TPI Homes and Properties. Call, email, message us on WhatsApp or visit our office.',
+    'Get in touch with Sholem Properties. Call, email, message us on WhatsApp or visit our office.',
   alternates: { canonical: '/contact' },
 };
 
@@ -69,7 +69,7 @@ export default async function ContactPage() {
                 {global?.whatsappNumber ? (
                   <ContactRow icon={<MessageCircle className="h-5 w-5" />} label="WhatsApp">
                     <a
-                      href={whatsappLink(global, 'Hello TPI Homes, I have an enquiry.')}
+                      href={whatsappLink(global, 'Hello Sholem Properties, I have an enquiry.')}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-brand-700 transition-colors hover:text-accent-600"
@@ -134,7 +134,7 @@ export default async function ContactPage() {
       {global?.mapEmbedUrl ? (
         <section aria-label="Office location map" className="border-t border-brand-100">
           <iframe
-            title="TPI Homes office location"
+            title="Sholem Properties office location"
             src={global.mapEmbedUrl}
             className="h-[420px] w-full border-0"
             loading="lazy"

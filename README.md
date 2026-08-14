@@ -1,6 +1,6 @@
-# TPI Homes and Properties
+# Sholem Properties
 
-Real estate website for TPI Homes and Properties Limited, built as a Next.js frontend
+Real estate website for Sholem Properties Limited, built as a Next.js frontend
 backed by Strapi 5 as the content management system. Administrators manage every piece
 of site content — properties, services, homepage sections, company info and inquiries —
 from the Strapi admin panel without touching frontend code.

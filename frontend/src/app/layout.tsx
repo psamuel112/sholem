@@ -28,7 +28,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export async function generateMetadata(): Promise<Metadata> {
   const global = await getGlobal();
 
-  const siteName = global?.siteName ?? 'TPI Homes';
+  const siteName = global?.siteName ?? 'Sholem Properties';
   const title = global?.defaultSeo?.metaTitle ?? `${siteName} | ${global?.tagline ?? 'Real Estate'}`;
   const description =
     global?.defaultSeo?.metaDescription ??
