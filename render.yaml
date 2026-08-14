@@ -43,6 +43,10 @@ services:
           property: connectionString
       - key: DATABASE_SSL
         value: 'true'
+      # Render's managed PostgreSQL certificate is not rooted in Node's default
+      # CA bundle. Keep the connection encrypted without rejecting its chain.
+      - key: DATABASE_SSL_REJECT_UNAUTHORIZED
+        value: 'false'
 
       # ---- Strapi secrets: generate once, then paste into the dashboard ----
       - key: APP_KEYS
